@@ -6,7 +6,8 @@
     </div>
     <router-view class="content-container-page"></router-view>
   </section>
-  <footer></footer>
+  <footer>
+  </footer>
   
 </template>
 
@@ -44,6 +45,10 @@ export default defineComponent({
     &-page{
       flex:1
     }
+  }
+
+  footer{
+    background: url('~@/assets/logo.png');
   }
 </style>
 

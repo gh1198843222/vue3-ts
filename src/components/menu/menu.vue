@@ -1,7 +1,10 @@
 <template>
-  <a-menu :mode="mode" :theme='theme'>
-    <ItemWrap :menuList='routes'/>
-  </a-menu>
+  <div class="menu-container">
+    <a-menu :mode="mode" :theme='theme'>
+      <ItemWrap :menuList='routes'/>
+    </a-menu>
+  </div>
+ 
 </template>
 
 <script lang="ts">
@@ -35,14 +38,19 @@ export default defineComponent({
 })
 </script>
 <style lang="less" scoped>
-  :deep(.ant-menu){
+  .menu-container{
     height: 100%;
-  }
-  // /deep/ .ant-menu{
-  //   height: 100%;
-  // }
+    // :deep(.ant-menu){
+    //   height: 100%;
+    // }
+    /deep/ .ant-menu{
+      height: 100%;
+    }
 
-  // ::v-deep .ant-menu{
-  //   height: 100%;
-  // }
+    // ::v-deep .ant-menu{
+    //   height: 100%;
+    // }
+    
+  }
+  
 </style>
